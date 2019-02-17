@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+
 using System.Web;
 using System.Web.Mvc;
 using AMS.Models;
@@ -50,10 +51,16 @@ namespace AMS.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "BatchId,BatchDurationInDays,StartTime,EndTime,BatchCode")] Batch batch)
         {
+            var x = System.Security.Principal.WindowsPrincipal.Current.Identity;
+            var x2 = System.Environment.UserDomainName;
+            var x3 = HttpContext.Request.LogonUserIdentity.Name;
+            string windowsName = System.Security.Principal.WindowsPrincipal.Current.Identity.Name;
+            //OR
+            string windowsNamee = System.Threading.Thread.CurrentPrincipal.Identity.Name;
             if (ModelState.IsValid)
             {
                 db.Batches.Add(batch);
-                db.SaveChanges();
+                //                db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(batch);

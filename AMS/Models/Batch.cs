@@ -26,10 +26,15 @@ namespace AMS.Models
 
         [DisplayName("Batch Duration ( In Days )")]
         public Nullable<int> BatchDurationInDays { get; set; }
+
         [DisplayName("Start Timing")]
+        [DataType(DataType.Time)]
+        [DisplayFormat(DataFormatString = "{0:hh\\:mm tt}", ApplyFormatInEditMode = true)]
         public Nullable<System.TimeSpan> StartTime { get; set; }
+
         [DisplayName("End Timing")]
-        public Nullable<System.TimeSpan> EndTime { get; set; }
+        [DataType(DataType.Time)]
+        [DisplayFormat(DataFormatString = "{0:hh\\:mm tt}", ApplyFormatInEditMode = true)] public Nullable<System.TimeSpan> EndTime { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
 
         public virtual ICollection<Student> Students { get; set; }

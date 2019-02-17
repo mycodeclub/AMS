@@ -65,7 +65,6 @@ E:\MyProjects\Attendance Management System\AMS\AMS\bin\System.Net.Http.Formattin
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\System.Web.Http.xml
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\System.Web.Http.WebHost.xml
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\MyProjects\Attendance Management System\AMS\AMS\obj\Debug\AMS.csprojAssemblyReference.cache
 E:\MyProjects\Attendance Management System\AMS\AMS\obj\Debug\AMS.csproj.CoreCompileInputs.cache
 E:\MyProjects\Attendance Management System\AMS\AMS\obj\Debug\AMS.csproj.CopyComplete
 E:\MyProjects\Attendance Management System\AMS\AMS\obj\Debug\AMS.dll
@@ -78,3 +77,7 @@ E:\MyProjects\Attendance Management System\AMS\AMS\bin\roslyn\System.Net.Http.dl
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\roslyn\System.Net.Sockets.dll
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 E:\MyProjects\Attendance Management System\AMS\AMS\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MyProjects\Attendance Management System\AMS\AMS\bin\EntityFramework.dll
+E:\MyProjects\Attendance Management System\AMS\AMS\bin\EntityFramework.SqlServer.dll
+E:\MyProjects\Attendance Management System\AMS\AMS\bin\EntityFramework.xml
+E:\MyProjects\Attendance Management System\AMS\AMS\bin\EntityFramework.SqlServer.xml

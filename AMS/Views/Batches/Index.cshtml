@@ -1,0 +1,67 @@
+﻿@model IEnumerable<AMS.Models.Batch>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="card shadow mb-4">
+    <div class="card-header">
+        Batch List
+        <a class="float-right btn btn-outline-primary" value="Add New" href="/Batches/Create">Add New</a>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <table class="table table-bordered dataTable" cellspacing="0" aria-describedby="dataTable_info">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BatchCode)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BatchDurationInDays)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.StartTime)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.EndTime)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr class="odd">
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BatchCode)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BatchDurationInDays)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.StartTime)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.EndTime)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.BatchId }) |
+                                            @Html.ActionLink("Details", "Details", new { id = item.BatchId }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.BatchId })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
